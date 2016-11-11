@@ -1,0 +1,39 @@
+@mixin relative-center {
+  position: relative;
+  margin: 0 auto;
+
+}
+
+@mixin absolute-center {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+@mixin absolute-v-center {
+  position: absolute;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+}
+
+@mixin relative-v-center {
+  position: relative;
+  margin: auto 0;
+
+}
+
+@mixin relative-hv-center {
+  position: relative;
+  margin: auto;
+}
+
+@mixin absolute-hv-center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

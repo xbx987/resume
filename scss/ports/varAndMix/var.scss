@@ -1,0 +1,100 @@
+$bodyColor: #00a8bf !default;
+$backgroundColor: #0d3c50 !default;
+
+$highColor: $bodyColor !default;
+$mainTextColor: #999 !default;
+$subColor: $backgroundColor !default;
+
+$font-family-sans-serif:  "Microsoft YaHei",Arial,Helvetica,sans-serifsans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    inherit !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
+//** Global textual link color.
+$link-color:            $highColor !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+//== Type
+//
+//block
+$border-radius-xs: 5px !default;
+$border-radius-s: 10px !default;
+$border-radius-m: 20px !default;
+$border-radius-l: 30px !default;
+$border-radius-xl: 40px !default;
+
+$margin-xs: 5px !default;
+$margin-s: 10px !default;
+$margin-m: 20px !default;
+$margin-l: 30px !default;
+$margin-xl: 40px !default;
+
+$padding-xs: 5px !default;
+$padding-s: 10px !default;
+$padding-m: 20px !default;
+$padding-l: 30px !default;
+$padding-xl: 40px !default;
+//indicatrix
+$line-xs: 1px !default;
+$line-s: 2px !default;
+$line-m: 3px !default;
+$line-l: 4px !default;
+$line-xl: 5px !default;
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1024px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;

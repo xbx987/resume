@@ -1,0 +1,133 @@
+@mixin init($w, $bw) {
+  .main-body {
+    padding: (15/340)*$w (10/340)*$w;
+    width: $w;
+    height: (480/340)*$bw;
+  }
+  .my-int {
+    padding: (10/340)*$w;
+    height: (350/340)*$bw;
+    border-radius: (5/340)*$w;
+  }
+  .my-inf {
+    margin: 0 0 (30/340)*$w 0;
+    height: (70/340)*$bw;
+    .main-inf{
+      float: left;
+      height: 100%;
+      width: (140/340)*$bw;
+      .my-pic{
+        float: left;
+        height: 100%;
+        width: 50%;
+      }
+      .name-inf{
+        float: left;
+        padding: 6% 0 6% 6%;
+        height: 100%;
+        width: 50%;
+      }
+    }
+    .sub-inf{
+      @include absolute-v-center;
+      right: 0;
+      height: 200px;
+    }
+  }
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  color: $mainTextColor;
+  background-color: #fff;
+}
+
+canvas {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $bodyColor;
+}
+
+.main-body {
+  position: relative;
+  margin: 0 auto;
+  color: inherit;
+}
+
+.my-int {
+  position: relative;
+  z-index: 10;
+  background-color: $backgroundColor;
+}
+
+.my-inf {
+  position: relative;
+  z-index: 10;
+}
+
+$base-width-l: $screen-lg;
+@media only screen and (min-width: $screen-lg) {
+  @include init($base-width-l,$base-width-l);
+  .my-int{
+    .int-left-part{
+      float: left;
+      width: (135/340)*$screen-lg;
+    }
+    .int-right-part{
+      float: right;
+      width: (135/340)*$screen-lg;
+    }
+  }
+}
+
+$base-width-ml: ($screen-lg+$screen-sm)/2;
+@media only screen and (min-width: $screen-sm) and (max-width: $screen-lg) {
+  body {
+    background-color: $bodyColor;
+  }
+  @include init(100%,$base-width-ml);
+  .my-int{
+    .int-left-part{
+      float: left;
+      width: (135/340)*100%;
+    }
+    .int-right-part{
+      float: right;
+      width: (135/340)*100%;
+    }
+  }
+}
+$base-width-sx: ($screen-xs+$screen-sm)/2;
+@media only screen and(max-width: $screen-sm) {
+  .main-body{
+    padding: (15/340)*100% (10/340)*100%;
+  }
+  .my-inf{
+    width: 100%;
+    .my-pic{
+      position: relative;
+      margin: 0 auto;
+      width: $base-width-sx*.4;
+      height: $base-width-sx*.4;
+    }
+    .name-inf{
+      text-align: center;
+    }
+    .sub-inf{
+      position: relative;
+      margin: 0 auto;
+      width: $base-width-sx*.4;
+    }
+  }
+  .my-int{
+    padding: (10/340)*100%;
+    width: 100%;
+    border-radius: (5/340)*100%;
+    .int-left-part,.int-rig-part{
+      width: 100%;
+    }
+  }
+}

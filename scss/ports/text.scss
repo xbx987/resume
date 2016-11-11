@@ -1,0 +1,41 @@
+h1 {
+  margin: .5em 0;
+  font-size: $font-size-h1;
+}
+h2 {
+  margin: .5em 0;
+  font-size: $font-size-h2;
+}
+h3 {
+  margin: .5em 0;
+  font-size: $font-size-h3;
+}
+h4 {
+  margin: .5em 0;
+  font-size: $font-size-h4;
+}
+
+h5 {
+  margin: .5em 0;
+  font-size: $font-size-h5;
+}
+.a-td-n {
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+.break-text{
+  word-break:break-all;
+}

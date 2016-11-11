@@ -1,0 +1,75 @@
+.my-int-item {
+  width: 100%;
+  margin: 0 0 $margin-l 0;
+
+  .int-item-header {
+    @include clearfix;
+    .int-icon {
+      float: left;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      text-align: center;
+      font-size: 24px;
+      color: $subColor;
+      background-color: $bodyColor;
+      border-radius: 50%;
+    }
+    .int-name {
+      float: left;
+      margin: 0 0 0 1em;
+      height: 2*24px;
+      width: 4*$font-size-h3;
+      line-height: 2*24px;
+      color: $highColor;
+      @include clearfix;
+      h3 {
+        margin: 0;
+        height: 100%;
+      }
+    }
+  }
+  .int-item-content {
+    @include clearfix;
+    text-align: left;
+    color: $mainTextColor;
+  }
+}
+.int-item-content{
+  @include clearfix;
+  .hl-text{
+    color: $highColor;
+  }
+  .indent-text{
+    text-indent: 2em;
+  }
+  a{
+    margin: 1em 0;
+  }
+  .progress-block{
+    @include clearfix;
+    margin: $margin-l 0;
+
+    ul{
+      padding: 0;
+      li{
+        margin: 1.5em 0;
+        height: 1em;
+        display: block;
+      }
+    }
+    .progress{
+      display: inline-block;
+      margin: 0 5% 0 0;
+      width: 50%;
+      height: 100%;
+      background-color: lighten($backgroundColor,8%);
+      border-radius: 5px;
+      .progress-bar{
+        height: 100%;
+        background-color: lighten($backgroundColor, 24%);
+        border-radius: 5px;
+      }
+    }
+  }
+}

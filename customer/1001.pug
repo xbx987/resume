@@ -1,0 +1,79 @@
+include ../pug-block/variables
+include ../pug-block/mixins
+-var subInf1={iClass:["fa","fa-user","fa-li"],content:"XXXXXXX" }
+-var subInf2={iClass:["fa","fa-phone","fa-li"],content:"XXXXXXXX" }
+-var subInf3={iClass:["fa","fa-envelope","fa-li"],content:"XXXXXXXX" }
+-var subInf4={iClass:["fa","fa-home","fa-li"],content:"XXXXXXX" }
+
+-var intItem1={iClass:["fa","fa-graduation-cap","fa-fw"],name:"教育背景"}
+-var intItem2={iClass:["fa","fa-wrench","fa-fw"],name:"个人技能"}
+-var intItem3={iClass:["fa","fa-star","fa-fw"],name:"自我评价"}
+-var intItem4={iClass:["fa","fa-book","fa-fw"],name:"个人成就"}
+-var intItem5={iClass:["fa","fa-road","fa-fw"],name:"职业方向"}
+doctype html
+html
+    head
+        include ../pug-block/head
+
+    body
+        main.main-body#ma-bd
+            header.my-inf
+                div.main-inf
+                    div.my-pic.imageRound
+                        img(src="../270574-106.jpg")
+                    div.name-inf
+                        div.my-name
+                            h1 小明
+                        div.job-name
+                            p 求职：销售员
+                div.sub-inf
+                    ul.fa-ul
+                        +sub-inf-item(subInf1)
+                        +sub-inf-item(subInf2)
+                        +sub-inf-item(subInf3)
+                        +sub-inf-item(subInf4)
+            article.my-int
+                div.int-left-part
+                    +my-int-item(intItem1)
+                        p XXX学院XXX专业
+                        p XXX中学
+                        p CET4
+                    +my-int-item(intItem2)
+                        p 熟悉计算机基本知识、microfost office办公软件，掌握CAD、photoshop等制图软件。获得计算机二级证书（C语言）。能熟练使用水平仪、全站仪。等等
+                        div.progress-block
+                            ul
+                                li
+                                    div.progress
+                                        div.progress-bar(style="width: 70%;")
+                                    span aaa
+                                li
+                                    div.progress
+                                        div.progress-bar(style="width: 60%;")
+                                    span bbb
+                                li
+                                    div.progress
+                                        div.progress-bar(style="width: 65%;")
+                                    span ccc
+                                li
+                                    div.progress
+                                        div.progress-bar(style="width: 60%;")
+                                    span ddd
+                                li
+                                    div.progress
+                                        div.progress-bar(style="width: 50%;")
+                                    span eee
+
+
+                div.int-right-part
+                    +my-int-item(intItem3)
+                        p 本人性格热情开朗，待人友好，为人诚实谦虚。工作勤奋，认真负责，能吃苦耐劳，尽职尽责，有耐心。具有亲和力，平易近人，善于与人沟通。
+                        p 曾担任系学生会外联部干部、系团总支组织部副部长、班级生活委员等，在学生工作和外出拉赞助与商家联系的过程中，大大提高了自己的办事和处事能力。此外，还积极参加课外文体活动，各种社会实践活动和兼职工作等，以增加自己的阅历，提高自己的能力。在工作中体会办事方式，锻炼口才和人际交往能力。曾连续两年获得学院“暑期社会实践积极分子”，“学生会优秀干事”等荣誉称号。
+
+                    +my-int-item(intItem4)
+                        p 曾担任系学生会外联部干部、系团总支组织部副部长、班级生活委员等，在学生工作和外出拉赞助与商家联系的过程中，大大提高了自己的办事和处事能力。此外，还积极参加课外文体活动，各种社会实践活动和兼职工作等，以增加自己的阅历，提高自己的能力。在工作中体会办事方式，锻炼口才和人际交往能力。曾连续两年获得学院“暑期社会实践积极分子”，“学生会优秀干事”等荣誉称号。
+
+                    +my-int-item(intItem5)
+                        p 首先我会把自己分内的事做好，我会用我所学的知识与平时积累的经验来认真对待工作中的问题。能够处理好与同事之间的关系，在公司做事要以公司的利益着想。
+            canvas#Mycanvas
+
+        include ../pug-block/body-script

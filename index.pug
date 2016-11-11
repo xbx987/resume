@@ -1,0 +1,104 @@
+include pug-block/variables
+include pug-block/mixins
+-var subInf1={iClass:["fa","fa-user","fa-li"],content:"1995/男/2017年应届生" }
+-var subInf2={iClass:["fa","fa-phone","fa-li"],content:"15268476208" }
+-var subInf3={iClass:["fa","fa-envelope","fa-li"],content:"673806687@qq.com" }
+-var subInf4={iClass:["fa","fa-home","fa-li"],content:"杭州市余杭区橄榄树花园21幢3单元1002室" }
+
+-var intItem1={iClass:["fa","fa-graduation-cap","fa-fw"],name:"教育背景"}
+-var intItem2={iClass:["fa","fa-wrench","fa-fw"],name:"个人技能"}
+-var intItem3={iClass:["fa","fa-star","fa-fw"],name:"自我评价"}
+-var intItem4={iClass:["fa","fa-book","fa-fw"],name:"个人作品"}
+-var intItem5={iClass:["fa","fa-road","fa-fw"],name:"前端之路"}
+doctype html
+html
+    head
+        include pug-block/head
+
+    body
+        main.main-body#ma-bd
+            header.my-inf
+                div.main-inf
+                    div.my-pic.imageRound
+                        img(src="270574-106.jpg")
+                    div.name-inf
+                        div.my-name
+                            h1 陈灵捷
+                        div.job-name
+                            p 求职：web前端工程师
+                div.sub-inf
+                    ul.fa-ul
+                        +sub-inf-item(subInf1)
+                        +sub-inf-item(subInf2)
+                        +sub-inf-item(subInf3)
+                        +sub-inf-item(subInf4)
+                        li
+                            i.fa.fa-paint-brush.fa-li
+                            a.a-td-n(href="http://www.xiaobxia.win" target="_blank") 我的博客
+            article.my-int
+                div.int-left-part
+                    +my-int-item(intItem1)
+                        p 绍兴文理学院自动化专业
+                        p 杭州第七中学
+                        p CET4
+                    +my-int-item(intItem2)
+                        p.hl-text 语言：html5，css3，javascript
+                        p html：熟悉html5，熟悉并使用过大部分新元素以及api，对语义化html也有实践。
+                        p css：熟悉css3，并用于实践当中，懂得模块化。
+                        p javascript：原生语言的基础扎实，学习过js设计模式和代码的最佳实践。
+                        p.hl-text 框架：bootstrap，jquery
+                        p 会使用bootstrap并阅读过源码，对响应式布局与模块化也有实践。
+                        p 熟悉jquery，阅读过小部分源码，会写并写有jQuery插件。
+                        p.hl-text 工具：sass，pug/jade，gulp
+                        p 熟练使用pug/jade、sass，会使用gulp。
+                        p.hl-text 版本管理：git
+                        p 会使用github的相关的功能。
+                        div.progress-block
+                            ul
+                                li
+                                    div.progress
+                                        div.progress-bar(style="width: 70%;")
+                                    span html
+                                li
+                                    div.progress
+                                        div.progress-bar(style="width: 60%;")
+                                    span css
+                                li
+                                    div.progress
+                                        div.progress-bar(style="width: 65%;")
+                                    span javascript
+                                li
+                                    div.progress
+                                        div.progress-bar(style="width: 60%;")
+                                    span jQuery
+                                li
+                                    div.progress
+                                        div.progress-bar(style="width: 50%;")
+                                    span bootstrap
+
+
+                div.int-right-part
+                    +my-int-item(intItem3)
+                        p 我是一个为人和善，乐于沟通，对技术有热情的人。
+                        p.
+                            喜爱看书，看书涉猎广泛，阅读了大量文学作品，和部分经济学，社会学，心理学，行为学作品。
+                            目前都在看技术书籍，看过《html5和css3权威指南》，《javascript权威指南》，
+                            《javascript高级程序设计》，《锋利的jQuery》，《javascript设计模式》。
+                            之后也有学习后端语言nodejs和php的计划。
+                        p 喜爱在推酷上了解技术的新资讯，爱逛技术论坛SegmentFault。
+                    +my-int-item(intItem4)
+                        p
+                            a.a-td-n(href="https://xiaobxia.github.io/myPages/" target="_blank") 作品集地址
+                        p.indent-text 1.canvas多层次气泡
+                        p
+                            a.a-td-n(href="http://www.xiaobxia.win" target="_blank") 博客
+                            |&nbsp;(&nbsp;
+                            a.a-td-n(href="https://github.com/xiaobxia/page-V2" target="_blank") 源码
+                            |&nbsp;)
+
+                    +my-int-item(intItem5)
+                        p 从16年5月份开始学习前端，在6月份下定决心今后往前端发展。选择前端的原因是我发现js是门很自由的语言，个人很喜欢这样的语言风格。其次写出漂亮的网页时，能体验开发的乐趣，很有成就感。从刚开始学习时，接触了html5和css3，同时之后也学习了部分主要的库和工具。虽然前端的发展日新月异还有好多内容和新技术我还没有接触过，但是我也很乐于去接触并学习。希望做一个全面的前端开发者。
+
+            canvas#Mycanvas
+
+        include pug-block/body-script

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAgB;EACd,MAAM,EAAE,GAAG;;AAEb,eAAe;EACb,MAAM,EAAE,GAAG;;AAEb,eAAe;EACb,MAAM,EAAE,GAAG;;AAEb,eAAe;EACb,MAAM,EAAE,GAAG;;AAEb,gBAAgB;EACd,MAAM,EAAE,GAAG",
+"sources": ["indicatrix.scss"],
+"names": [],
+"file": "indicatrix.css"
+}

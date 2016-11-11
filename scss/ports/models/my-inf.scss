@@ -1,0 +1,37 @@
+.main-inf{
+  .name-inf{
+    color: $subColor;
+    text-align: left;
+    p{
+      font-weight: bold;
+    }
+    h1{
+      margin: .25em 0;
+    }
+    .my-name,.job-name{
+      @include clearfix;
+    }
+  }
+}
+.sub-inf{
+  color: $subColor;
+  text-align: left;
+  ul{
+    padding: 0;
+    li{
+      margin: 1em 0;
+      display: block;
+      @include clearfix;
+      i{
+        margin: 0 1em 0 0;
+      }
+
+    }
+  }
+  a{
+    color: $subColor;
+    &:hover,&:focus{
+      color: #006573;
+    }
+  }
+}

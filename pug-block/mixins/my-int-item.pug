@@ -1,0 +1,10 @@
+mixin my-int-item(item)
+    section.my-int-item
+        div.int-item-header
+            div.int-icon
+                i(class!=item.iClass)
+            div.int-name
+                h3=item.name
+        div.int-item-content
+            if block
+                block

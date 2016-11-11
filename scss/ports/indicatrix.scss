@@ -1,0 +1,57 @@
+.cutting-line-xs{
+  height: $line-xs;
+}
+.cutting-line-s{
+  height: $line-s;
+}
+.cutting-line-m{
+  height: $line-m;
+}
+.cutting-line-l{
+  height: $line-l;
+}
+.cutting-line-xl{
+  height: $line-xl;
+}
+//v
+.cutting-line-v-xs{
+  width: $line-xs;
+}
+.cutting-line-v-s{
+  width: $line-s;
+}
+.cutting-line-v-m{
+  width: $line-m;
+}
+.cutting-line-v-l{
+  width: $line-l;
+}
+.cutting-line-v-xl{
+  width: $line-xl;
+}
+//round
+.round-xs{
+  width: 3*$line-xs;
+  height: 3*$line-xs;
+  border-radius: 50%;
+}
+.round-s{
+  width: 3*$line-s;
+  height: 3*$line-s;
+  border-radius: 50%;
+}
+.round-m{
+  width: 3*$line-m;
+  height: 3*$line-m;
+  border-radius: 50%;
+}
+.round-l{
+  width: 3*$line-l;
+  height: 3*$line-l;
+  border-radius: 50%;
+}
+.round-xl{
+  width: 3*$line-xl;
+  height: 3*$line-xl;
+  border-radius: 50%;
+}
